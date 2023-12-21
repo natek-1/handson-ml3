@@ -52,6 +52,12 @@ Next, run the following commands:
     $ conda activate homl3
     $ python -m ipykernel install --user --name=python3
 
+[Not from the book itself by from my personal use case] In order to use the GPU from an M series device I had to add teh followign
+
+    $ conda install -c apple tensorflow-deps
+    $ pip install tensorflow-macos
+    $ pip install tensorflow-metal
+
 Finally, start Jupyter:
 
     $ jupyter notebook
